@@ -22,7 +22,7 @@
 """
 
 
-class myTime:
+class MyTime:
     def __init__(self, first=0, second=0):
         if isinstance(first, int) and isinstance(second, int) and first >= 0 and second >= 0:
             self.first = first
@@ -45,12 +45,12 @@ class myTime:
         print(f"Time in minutes: {self.first * 60 + self.second}")
 
 
-def make_myTime(first, second):
-    return myTime(first, second)
+def make_MyTime(first, second):
+    return MyTime(first, second)
 
 
 if __name__ == '__main__':
-    mew_time = make_myTime(4, 23)
+    mew_time = make_MyTime(4, 23)
     mew_time.display()
     mew_time.minutes()
     mew_time.read()
